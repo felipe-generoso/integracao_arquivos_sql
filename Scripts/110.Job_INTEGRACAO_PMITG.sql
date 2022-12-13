@@ -1,7 +1,7 @@
 USE [msdb]
 GO
 
-/****** Object:  Job [INTEGRACAO_PMITG]    Script Date: 10/12/2019 00:35:21 ******/
+
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0

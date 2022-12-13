@@ -24,7 +24,7 @@ Uma Tabela consolidada onde é possível:
 - Segmentação para campanha de aniversário
 - Classificação de pessoas em níveis de comportamento de compra.
 
-Schema de tabelas e campos:
+Schema básico de tabelas:
 
 Tabela CLIENTES:
 

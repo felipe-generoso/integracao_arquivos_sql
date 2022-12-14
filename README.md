@@ -10,19 +10,19 @@ Frequência de integração a cada 24 horas (schedule às 07 da manhã) via Job.
 
 O projeto inclui:
 
-- Job e Procedures de integração com:
+Job e Procedures de integração com:
   - Validação de email
   - Validação de dados básicos
   - Log da rodada de integração 
 
 Visão consolidada onde é possível filtrar:
-- Pessoas que compram mais de 1x nos últimos 12 meses
-- Pessoas em níveis de comportamento de compra (tier)
-- Pessoas que fazem aniversário no mês
-- Por região e cidade
-- Por faixa de compra
-- Por tempo médio de compras
-- Por LTV
+  - Pessoas que compram mais de 1x nos últimos 12 meses
+  - Pessoas em níveis de comportamento de compra (tier)
+  - Pessoas que fazem aniversário no mês
+  - Por região e cidade
+  - Por faixa de compra
+  - Por tempo médio de compras
+  - Por LTV
 
 Schema básico de tabelas:
 
@@ -54,7 +54,7 @@ Tabela PEDIDOS:
 Tabela CONS_RFV (Calculada)
 
 - DATA_ULTIMA_COMPRA
-- ULTIMO_DEPTO_COMPRA
+- ULTIMO_DEPTO_COMPRA / último departamento comprado
 - PARCELAMENTO_PREFER / parcelamento mais praticado
 - MEIO_PAGAMENTO_PREFER / meio de pagamento mais praticado
 - TICKET_MEDIO_ALL / ticket médio total
@@ -74,7 +74,7 @@ Tabela LOG DE RODADAS
 
 - ID_RODADA / Sequencial da rodada
 - DATA_RODADA / Timestamp da rodada do JOB
-- TABELA / Qua tabela o log está referenciando (clientes ou pedidos)
+- TABELA / Qual tabela o log está referenciando (clientes ou pedidos)
 - QUANTIDADE_ALTERADO / Quantidade de registros alterados na rodada
 - QUANTIDADE_INSERIDO / Quantidade de registros inseridos na rodada
 

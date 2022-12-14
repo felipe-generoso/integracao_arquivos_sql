@@ -2,7 +2,7 @@
 
 Especificação resumida:
 
-Ramo de atuação aplicável: Database Marketing.
+Aplicável a projetos de: Database Marketing / ETL / EDIs.
 
 Integração automatizada dos dados originários dos arquivos: pessoas e pedidos.(schema de tabelas na sequência). 
 

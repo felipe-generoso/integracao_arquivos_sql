@@ -23,7 +23,7 @@ BEGIN
  INSERT INTO #ARQUIVOS  
  EXEC xp_dirtree @DIRETORIO, 2, 1 
    
- --Só efetua a inserção de novos arquivos se os mesmos não existirem  
+ --Só efetua a inserção de novos arquivos se os mesmos ainda não foram integrados.
    
  INSERT INTO INTEGRACAO_ARQUIVOS  
  (  

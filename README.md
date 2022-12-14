@@ -4,25 +4,25 @@ Especificação resumida:
 
 Aplicável a projetos de: Database Marketing / ETL / EDIs.
 
-Integração automatizada dos dados originários dos arquivos: pessoas e pedidos.(schema de tabelas na sequência). 
+Integração automatizada dos dados originários dos arquivos da pasta do projeto: "Arquivos de exemplo": Pessoas e Pedidos.
 
-Frequência de integração a cada 24 horas (schedule às 07 da manhã).
+Frequência de integração a cada 24 horas (schedule às 07 da manhã) via Job.
 
 O projeto inclui:
-- Validação de email
-- Validação de dados básicos
-- Log da rodada de integração 
 
-Segmentações:
+- Job e Procedures de integração com:
+  - Validação de email
+  - Validação de dados básicos
+  - Log da rodada de integração 
+
+Visão consolidada onde é possível filtrar:
+- Pessoas que compram mais de 1x nos últimos 12 meses
+- Pessoas em níveis de comportamento de compra (tier)
+- Pessoas que fazem aniversário no mês
 - Por região e cidade
 - Por faixa de compra
 - Por tempo médio de compras
 - Por LTV
-
-Uma Tabela consolidada onde é possível:
-- Realizar o filtro de pessoas que compram mais de 1x nos últimos 12 meses
-- Segmentação para campanha de aniversário
-- Classificação de pessoas em níveis de comportamento de compra.
 
 Schema básico de tabelas:
 
@@ -80,7 +80,7 @@ Tabela LOG DE RODADAS
 
 Demais observações para execução do projeto:
 
-1) Os scripts estão nomeados na pasta com a ordem que deverão ser executados.
+1) Os scripts estão nomeados na pasta com a ordem numérica que deverão ser executados.
 2) Deverão ser criados os diretórios: "C:\PMITG\CLIENTES" e "C:\PMITG\PEDIDOS" para a integração dos arquivos.
-3) A rotina não processa arquivos do mesmo nome que já foram processados anteriormente.
+3) A rotina não processa arquivos do mesmo nome, que já foram processados anteriormente.
 4) Os scripts foram criados por objetos e em arquivos separados para ficar mais claro o entendimento e organização.

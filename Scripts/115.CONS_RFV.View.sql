@@ -8,13 +8,13 @@ GO
 CREATE VIEW [dbo].[CONS_RFV]
 AS
 WITH CTE_PED (
-			        ID_CLIENTE
-			       ,ID_PEDIDO
-			       ,DEPARTAMENTO
-			       ,VALOR_UNITARIO
-			       ,PARCELAS
-			       ,DATA_PEDIDO
-			       ,MEIO_PAGAMENTO
+	   ID_CLIENTE
+	  ,ID_PEDIDO
+	  ,DEPARTAMENTO
+	  ,VALOR_UNITARIO
+	  ,PARCELAS
+	  ,DATA_PEDIDO
+	  ,MEIO_PAGAMENTO
 		         )
 AS
 (

@@ -18,11 +18,11 @@ BEGIN
            AND @EMAIL NOT LIKE '%.@%'
            AND @EMAIL NOT LIKE '%@.%'
 	   AND LEN(LTRIM(RTRIM(@EMAIL))) - LEN(REPLACE(LTRIM(RTRIM(@EMAIL)),'@','')) = 1 --Apenas um arroba por e-mail é permitido
-	   AND CHARINDEX(' ',LTRIM(RTRIM(@EMAIL))) = 0					 --Não é possível ter espaços
-	   AND LEFT(LTRIM(@EMAIL),1) <> '@'						 --O arroba não pode ser o primeiro caractér
-	   AND RIGHT(RTRIM(@EMAIL),1) <> '.'						 --O ponto não pode ser o primeiro caractér
+	   AND CHARINDEX(' ',LTRIM(RTRIM(@EMAIL))) = 0					 --Não pode ter espaços
+	   AND LEFT(LTRIM(@EMAIL),1) <> '@'						 --O arroba não pode ser o primeiro caractere
+	   AND RIGHT(RTRIM(@EMAIL),1) <> '.'						 --O ponto não pode ser o primeiro caractere
 	   AND CHARINDEX('.',@EMAIL,CHARINDEX('@',@EMAIL)) - CHARINDEX('@',@EMAIL) > 1   --Deve haver um ponto após o arroba
-	   AND CHARINDEX('.',REVERSE(LTRIM(RTRIM(@EMAIL)))) >= 3			 --O nome do domínio deve finalizar com dois caractéres
+	   AND CHARINDEX('.',REVERSE(LTRIM(RTRIM(@EMAIL)))) >= 3			 --O nome do domínio deve finalizar com dois caracteres
 
 	RETURN @EMAIL_VALIDO
 

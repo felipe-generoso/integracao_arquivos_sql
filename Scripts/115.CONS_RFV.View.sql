@@ -55,7 +55,7 @@ SELECT C.ID						   AS CLIENTE
 		       ,PT.PARCELAS
 		       ,ROW_NUMBER() OVER(PARTITION BY PT.ID_CLIENTE ORDER BY COUNT(PT.PARCELAS) DESC) AS ORDEM
 		   FROM CTE_PED PT WITH(NOLOCK)
-		   ROUP BY PT.ID_CLIENTE, PT.PARCELAS) PP ON PP.ID_CLIENTE = C.ID
+		   GROUP BY PT.ID_CLIENTE, PT.PARCELAS) PP ON PP.ID_CLIENTE = C.ID
 		                                         AND PP.ORDEM = 1 
   ------------------------------------#-----------------------------------------------------------------
   --Meio de pagamento mais praticado
